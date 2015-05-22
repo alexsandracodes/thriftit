@@ -1,0 +1,13 @@
+<ion-view view-title="Addit">
+  <ion-content>
+  	{{disp}} 
+  	<button class="button button-positive" ng-click="addPhoto($event)">
+		Add from Camera
+	</button>
+	<button ng-click="count=1+count" class="button button-positive">
+		Add from Photo Library 
+	</button>
+	<img ng-src="{{lastPhoto}}" style="max-width:100%">
+	test scope {{count}}
+  </ion-content>
+</ion-view>

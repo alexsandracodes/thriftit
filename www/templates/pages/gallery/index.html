@@ -1,0 +1,15 @@
+<ion-view view-title="Gallery">
+  <ion-content>
+    <!--Product Card Wrapper-->
+    <div ng-repeat="product in products"  class="list card">
+    	<div class="priceContainer"></div>
+    	<a class="price">{{product.price|currency:undefined:0}}</a>
+    	<div class="item-body">
+	    	<img class="item item-image" ng-src="{{product.image}}"/>
+	    	<p>{{product.description}}</p>
+	    	<a href="#" class="subdued">{{product.seller}}</a>
+	   	</div>
+    </div>
+
+  </ion-content>
+</ion-view>
